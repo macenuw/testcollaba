@@ -73,6 +73,7 @@
       line-height: 24px;
       display: none;
       z-index: 999;
+
       @media (max-width:400px) {
         left: -80px;
         top: 28px;
@@ -101,6 +102,7 @@
     @media (max-width:420px) {
       min-width: 1px;
       margin-right: 8px;
+      margin-bottom: 8px;
     }
   }
 
@@ -146,6 +148,10 @@
     font-size: 14px;
     line-height: 17px;
     cursor: pointer;
+
+    @media (max-width:420px) {
+      margin-right: auto;
+    }
   }
 
   &__input {
