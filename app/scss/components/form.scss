@@ -167,6 +167,7 @@
 
 #adCompany {
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: '';
