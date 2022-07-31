@@ -165,6 +165,24 @@
   }
 }
 
+#adCompany {
+  position: relative;
+
+  &::after {
+    content: '';
+    border-top: 5px solid #999;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    position: absolute;
+    left: 160px;
+    top: 10px;
+  }
+}
+
+.hide {
+  display: none;
+}
+
 .mb40 {
   margin-bottom: 40px;
 }

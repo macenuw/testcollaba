@@ -83,3 +83,12 @@ saveBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
   closeModal()
 })
+
+
+//hide adCompany
+const adCompany = document.querySelector('#adCompany');
+adCompany.addEventListener('click', () => {
+  adCompany.closest('.form__block').querySelectorAll('.form__row').forEach(row => {
+    row.classList.toggle('hide')
+  })
+})
