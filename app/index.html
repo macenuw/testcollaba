@@ -1,15 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
+
 <body>
-    
+    <section class="mailing container">
+        <h2 class="mailing__title">Управление рассылками</h2>
+        <p class="mailing__text">
+            Здравствуйте, Андрей. Выберите, категории писем, от которых хотите отписаться.<br>
+            Но пожалуйста, исключите только те категории, которые действительно вас не интересуют.<br>
+            Мы обещаем слать только полезные письма где 😊
+        </p>
+        <form action="#" class="mailing__form form">
+            <h3 class="form__title">Общие уведомления</h3>
+            <div class="form__row">
+                <label for="welcomeSiries" class="form__label">
+                    <span class="form__label-text">
+                        Приветственная серия
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="welcomeSiries" checked>
+                <div class="form__info">
+                    <p class="form__info-text">4 полезных и емких письма в течение месяца</p>
+                </div>
+            </div>
+            <div class="form__row">
+                <label for="webinar" class="form__label">
+                    <span class="form__label-text">
+                        Образовательные вебинары
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="webinar">
+                <div class="form__info">
+                    <p class="form__info-text">Бесплатные вебинары проходят 1 раз в 2 недели.
+                        Вы будете получать 2 письма с напоминанием
+                        о предстоящем вебинаре</p>
+                </div>
+            </div>
+            <div class="form__row">
+                <label for="privatMessage" class="form__label">
+                    <span class="form__label-text">
+                        Личные сообщения
+                    </span>
+                    <span class="form__label-info">
+                        <svg id="Компонент_112_2" data-name="Компонент 112 – 2" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" viewBox="0 0 16 16">
+                            <path id="Контур_15057" data-name="Контур 15057"
+                                d="M8,0a7.787,7.787,0,0,1,8,7.556v.889A7.787,7.787,0,0,1,8,16,7.787,7.787,0,0,1,0,8.444V7.556A7.787,7.787,0,0,1,8,0Z"
+                                fill="#ebebeb" />
+                            <path id="Контур_15058" data-name="Контур 15058"
+                                d="M3.229-.639l-.088.375a7.757,7.757,0,0,1-.861.3,2.218,2.218,0,0,1-.551.085.934.934,0,0,1-.7-.243.832.832,0,0,1-.234-.6A1.781,1.781,0,0,1,.814-1q.023-.146.076-.369l.621-2.49q.047-.205.091-.439a2.219,2.219,0,0,0,.044-.4.633.633,0,0,0-.108-.437A.645.645,0,0,0,1.1-5.244,1.917,1.917,0,0,0,.753-5.2q-.214.041-.325.07l.088-.375a5.76,5.76,0,0,1,.82-.3,2.316,2.316,0,0,1,.574-.1.925.925,0,0,1,.7.229.857.857,0,0,1,.217.615,2.376,2.376,0,0,1-.023.287,2.978,2.978,0,0,1-.07.363L2.1-1.928q-.059.229-.1.448a1.914,1.914,0,0,0-.044.36.57.57,0,0,0,.149.457.76.76,0,0,0,.483.123,2.47,2.47,0,0,0,.319-.029A1.63,1.63,0,0,0,3.229-.639Zm.416-7.488a.86.86,0,0,1-.217.583.686.686,0,0,1-.539.249.676.676,0,0,1-.516-.237.781.781,0,0,1-.217-.542.813.813,0,0,1,.217-.562.672.672,0,0,1,.516-.24.712.712,0,0,1,.545.226A.744.744,0,0,1,3.645-8.127Z"
+                                transform="translate(5.57 12)" fill="#b9b9ba" />
+                        </svg>
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="privatMessage" checked>
+                <div class="form__info">
+                    <select name="timing" class="castom-select">
+                        <option value="fast" selected>Мгновенно</option>
+                        <option value="once per day">1 раз в день</option>
+                        <option value="off">Отключить</option>
+                    </select>
+                </div>
+            </div>
+            <h3 class="form__title">Общие уведомления</h3>
+            <div class="form__row">
+                <label for="news" class="form__label">
+                    <span class="form__label-text">
+                        Новости
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="news">
+                <div class="form__info">
+                </div>
+            </div>
+            <h4 class="form__subtitle">Поисковые агенты</h4>
+            <div class="form__row">
+                <div class="form__name-section">
+                    <label for="business" class="form__label">
+                        <span class="form__label-text">
+                            Бизнес
+                        </span>
+                    </label>
+                    <div class="form__name-category">
+                        <ul class="form__category-list">
+                            <li class="form__category-item">
+                                <span class="form__category-text">Seo</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="form__category-item">
+                                <span class="form__category-text">Продвижение</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="form__category-item">
+                                <span class="form__category-text">Аналитика</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                        <button class="form__category-btn" type="button">Детали</button>
+                    </div>
+                </div>
+                <input type="checkbox" class="form__input custom-checkbox" id="business" checked>
+                <div class="form__info">
+                    <p class="form__info-text">Поисковый агент присылает 1 письмо в неделю и только при условии, что
+                        найдены новые площадки
+                    </p>
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__name-section">
+                    <label for="123" class="form__label">
+                        <span class="form__label-text">
+                            123
+                        </span>
+                    </label>
+                    <div class="form__name-category">
+                        <ul class="form__category-list">
+                            <li class="form__category-item">
+                                <span class="form__category-text">Seo</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="form__category-item">
+                                <span class="form__category-text">Продвижение</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                        <button class="form__category-btn" type="button">Детали</button>
+                    </div>
+                </div>
+                <input type="checkbox" class="form__input custom-checkbox" id="123">
+                <div class="form__info">
+                </div>
+            </div>
+            <div class="form__row">
+                <div class="form__name-section">
+                    <label for="seo" class="form__label">
+                        <span class="form__label-text">
+                            SEO
+                        </span>
+                    </label>
+                    <div class="form__name-category">
+                        <ul class="form__category-list">
+                            <li class="form__category-item">
+                                <span class="form__category-text">Seo</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="form__category-item">
+                                <span class="form__category-text">Продвижение</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                            <li class="form__category-item">
+                                <span class="form__category-text">Аналитика</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                        <button class="form__category-btn" type="button">Детали</button>
+                    </div>
+                </div>
+                <input type="checkbox" class="form__input custom-checkbox" id="seo">
+                <div class="form__info">
+                </div>
+            </div>
+            <div class="form__row mb40">
+                <div class="form__name-section">
+                    <label for="exchange" class="form__label">
+                        <span class="form__label-text">
+                            Бирж ссылки
+                        </span>
+                    </label>
+                    <div class="form__name-category">
+                        <ul class="form__category-list">
+                            <li class="form__category-item">
+                                <span class="form__category-text">Биржи ссылок: Не обнаружен</span>
+                                <span class="form__category-delete">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
+                                        <g id="Сгруппировать_8066" data-name="Сгруппировать 8066"
+                                            transform="translate(0)">
+                                            <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12"
+                                                height="2" transform="translate(0 5)" fill="#c1c1c1" />
+                                            <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12"
+                                                height="2" transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                                        </g>
+                                    </svg>
+                                </span>
+                            </li>
+                        </ul>
+                        <button class="form__category-btn" type="button">Детали</button>
+                    </div>
+                </div>
+                <input type="checkbox" class="form__input custom-checkbox" id="exchange" checked>
+                <div class="form__info">
+                </div>
+            </div>
+            <h4 class="form__subtitle">Рекламные компании</h4>
+            <div class="form__row">
+                <label for="ad0" class="form__label">
+                    <span class="form__label-text">
+                        Строительство домов в Москве
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="ad0" checked>
+                <div class="form__info">
+                    <select name="timing" class="castom-select">
+                        <option value="fast" selected>Мгновенно</option>
+                        <option value="once per day">1 раз в день</option>
+                        <option value="off">Отключить</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__row mb40">
+                <label for="ad1" class="form__label">
+                    <span class="form__label-text">
+                        Строительство домов в Москве
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="ad1">
+                <div class="form__info">
+                    <select name="timing" class="castom-select">
+                        <option value="fast" selected>Мгновенно</option>
+                        <option value="once per day">1 раз в день</option>
+                        <option value="off">Отключить</option>
+                    </select>
+                </div>
+            </div>
+            <h3 class="form__title">Уведомления по Телеграму</h3>
+            <div class="form__row">
+                <label for="newsTelegram" class="form__label">
+                    <span class="form__label-text">
+                        Новости
+                    </span>
+                </label>
+                <input type="checkbox" class="form__input custom-checkbox" id="newsTelegram">
+                <div class="form__info">
+                </div>
+            </div>
+            <div class="form__btns">
+                <button class="form__btn" type="button" id="resetBtn">По умолчанию</button>
+                <button class="form__btn" type="button" id="saveSettingBtn">Сохранить изменения</button>
 
-
+            </div>
+        </form>
+    </section>
+    <div class="modal hide">
+        <div class="modal__inner">
+            <h4 class="modal__title"></h4>
+            <p class="modal__text"></p>
+            <button class="modal__close"> <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
+                    viewBox="0 0 12 12">
+                    <g id="Сгруппировать_8066" data-name="Сгруппировать 8066" transform="translate(0)">
+                        <rect id="Прямоугольник_7774" data-name="Прямоугольник 7774" width="12" height="2"
+                            transform="translate(0 5)" fill="#c1c1c1" />
+                        <rect id="Прямоугольник_7775" data-name="Прямоугольник 7775" width="12" height="2"
+                            transform="translate(5 12) rotate(-90)" fill="#c1c1c1" />
+                    </g>
+                </svg>
+            </button>
+            <div class="modal__btns-inner">
+                <button class="modal__btn" id="saveBtn">Да</button>
+                <button class="modal__btn" id="closeBtn">Нет</button>
+            </div>
+        </div>
+    </div>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>

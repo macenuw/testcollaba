@@ -1,0 +1,19 @@
+.mailing {
+  padding: 232px 8px;
+
+  &__title {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 70px;
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    font-family: 'Inter', serif;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 47px;
+  }
+}

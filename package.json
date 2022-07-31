@@ -18,5 +18,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.1"
+  },
+  "dependencies": {
+    "jquery-form-styler": "^2.0.2"
   }
 }

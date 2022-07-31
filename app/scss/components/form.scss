@@ -1,0 +1,170 @@
+.form {
+  &__title {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 34px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 13px;
+  }
+
+  &__name-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    margin-bottom: 6px;
+    display: flex;
+  }
+
+  &__label-info {
+    position: relative;
+    margin: 0 4px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      left: 20px;
+      top: 0px;
+      background-color: #222222;
+      transform: rotate(45deg);
+      display: none;
+    }
+
+    &::before {
+      content: 'Письма об обновлениях и улучшениях платформы';
+      position: absolute;
+      width: 201px;
+      height: 60px;
+      left: 28px;
+      top: -20px;
+      background-color: #222222;
+      border-radius: 4px;
+      color: #fff;
+      padding: 9px 14px 11px 16px;
+      font-size: 14px;
+      line-height: 24px;
+      display: none;
+    }
+
+    &:hover::after,
+    &:hover::before {
+      display: block;
+    }
+  }
+
+  &__name-category {
+    display: flex;
+  }
+
+  &__category-list {
+    display: flex;
+    margin-right: 28px;
+    min-width: 313px;
+  }
+
+  &__category-item {
+    display: flex;
+    align-items: center;
+    padding: 7px 9px 7px 17px;
+    background-color: #EBEBEB;
+    border-radius: 4px;
+
+    &:not(:last-child) {
+      margin-right: 11px;
+    }
+  }
+
+  &__category-text {
+    font-size: 12px;
+    line-height: 14px;
+    color: #707070;
+    margin-right: 6px;
+  }
+
+  &__category-delete {
+    transform: rotate(45deg);
+    cursor: pointer;
+
+    rect {
+      transition: .3s;
+    }
+
+    &:hover {
+      rect {
+        fill: #3861FB;
+      }
+    }
+  }
+
+  &__category-btn {
+    background: none;
+    box-shadow: none;
+    border: none;
+    color: #3861FB;
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+  }
+
+  &__input {
+    margin-left: auto;
+    margin-right: 59px;
+  }
+
+  &__info {
+    max-width: 332px;
+    width: 100%;
+  }
+
+  &__info-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    padding: 12px 26px;
+    min-width: 213px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    background-color: #F0F6FF;
+    color: #3861FB;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    transition: .3s;
+
+    &:not(:last-child) {
+      margin-right: 19px;
+    }
+
+    &:hover {
+      background-color: #3861FB;
+      color: #fff;
+    }
+  }
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
