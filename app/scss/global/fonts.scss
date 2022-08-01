@@ -4,7 +4,7 @@
   font-style: normal;
   font-display: swap;
   src: url('../fonts/Inter-Medium.woff') format('woff'),
-    url('../fonts/Inter-Medium.woff2') format('woff'),
+    url('../fonts/Inter-Medium.woff2') format('woff2'),
     url('../fonts/Inter-Medium.ttf') format('woff');
 }
 
@@ -14,8 +14,8 @@
   font-style: normal;
   font-display: swap;
   src: url('../fonts/Roboto-Bold.woff') format('woff'),
-    url('../fonts/Roboto-Bold.woff2') format('woff'),
-    url('../fonts/Roboto-Bold.ttf') format('woff');
+    url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.ttf') format('ttf');
 }
 
 @font-face {
@@ -24,6 +24,6 @@
   font-style: normal;
   font-display: swap;
   src: url('../fonts/Roboto-Regular.woff') format('woff'),
-    url('../fonts/Roboto-Regular.woff2') format('woff'),
-    url('../fonts/Roboto-Regular.ttf') format('woff');
+    url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.ttf') format('ttf');
 }
