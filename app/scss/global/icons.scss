@@ -1,6 +1,8 @@
-.icon{
-  &__close{
+.icon {
+  &__close {
     width: 12px;
     height: 12px;
+    fill: #c1c1c1;
+    transition: .3s;
   }
 }

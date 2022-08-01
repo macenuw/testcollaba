@@ -129,12 +129,8 @@
     transform: rotate(45deg);
     cursor: pointer;
 
-    rect {
-      transition: .3s;
-    }
-
     &:hover {
-      rect {
+      .icon__close {
         fill: #3861FB;
       }
     }
